@@ -1,3 +1,9 @@
+import Layout from "../../components/Layout";
+
 export default function detail() {
-  return <div>detail</div>;
+  return (
+    <Layout>
+      <h1>Detail User Page</h1>
+    </Layout>
+  );
 }
