@@ -31,7 +31,7 @@ export default function blog(props: BlogProps) {
 }
 
 export async function getServerSideProps() {
-  const res = await fetch('http://localhost:3004/blog');
+  const res = await fetch('https://jsonplaceholder.typicode.com/posts');
   const dataBlog = await res.json();
 
   return {

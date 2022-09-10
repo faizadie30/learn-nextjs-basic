@@ -29,7 +29,7 @@ export default function Users(props: UserProps) {
 }
 
 export async function getStaticProps() {
-  const response = await fetch('http://localhost:3004/users');
+  const response = await fetch('https://jsonplaceholder.typicode.com/users');
   const dataUsers = await response.json();
 
   return {
